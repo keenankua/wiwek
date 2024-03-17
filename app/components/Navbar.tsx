@@ -12,7 +12,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = ["Tweetr (I mean X)", "Telgrum"];
 
@@ -34,15 +33,13 @@ function Navbar() {
       <Container maxWidth="xl">
         <Toolbar className="flex flex-row justify-between">
           <div className="hidden flex-row md:flex">
-            <AdbIcon sx={{ mr: 1 }} />
             <Typography
-              variant="h6"
+              variant="h5"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="#"
               sx={{
                 mr: 2,
-                fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
                 color: "inherit",
@@ -53,16 +50,14 @@ function Navbar() {
             </Typography>
           </div>
           <div className="flex flex-row md:hidden">
-            <AdbIcon sx={{ mr: 1 }} />
             <Typography
-              variant="h5"
+              variant="h4"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="#"
               sx={{
                 mr: 2,
                 flexGrow: 1,
-                fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
                 color: "inherit",
