@@ -161,7 +161,7 @@ export default function Home() {
                 <p className="text-8xl">4</p>
                 <div className="ml-8">
                   <h3 className="text-4xl">Now u have ${COIN_NAME}</h3>
-                  <p className="text-lg">that's it ur done</p>
+                  <p className="text-lg">{`that's it ur done`}</p>
                 </div>
               </div>
             </Paper>
@@ -197,15 +197,15 @@ export default function Home() {
           >
             <DialogContent>
               <DialogContentText id="alert-dialog-description">
-                Please be advised that {COIN_NAME} Memecoin is a cryptocurrency
+                {`Please be advised that ${COIN_NAME} Memecoin is a cryptocurrency
                 created for entertainment purposes and is not affiliated with or
-                endorsed by Vivek Ramaswamy. While {COIN_NAME} Memecoin may
+                endorsed by Vivek Ramaswamy. While ${COIN_NAME} Memecoin may
                 reference or incorporate elements related to Vivek Ramaswamy's
                 persona, image, or likeness, it does not imply any direct
                 endorsement, partnership, or approval by Vivek Ramaswamy. Any
-                resemblance or association between {COIN_NAME} Memecoin and
+                resemblance or association between ${COIN_NAME} Memecoin and
                 Vivek Ramaswamy is purely coincidental and intended for
-                satirical or humorous purposes.
+                satirical or humorous purposes.`}
               </DialogContentText>
             </DialogContent>
           </Dialog>
