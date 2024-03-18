@@ -7,7 +7,7 @@ import Paper from "@mui/material/Paper";
 import IconButton from "@mui/material/IconButton";
 import vivek from "./assets/vivek-himself.png";
 import vivekNotepad from "./assets/vivek-notepad.jpeg";
-import vivekRockChild from "./assets/vivek-rock-child.png";
+import vivekRock from "./assets/vivek-rock.png";
 import XIcon from "@mui/icons-material/X";
 import {
   COIN_NAME,
@@ -69,7 +69,7 @@ export default function Home() {
           </header>
           <div className="flex flex-col sm:flex-row justify-center">
             <img
-              src={vivekRockChild.src}
+              src={vivekRock.src}
               alt="me + rock + child"
               className="w-full sm:w-1/2"
             />
@@ -78,7 +78,7 @@ export default function Home() {
                 {TAGLINE}
               </h4>
               <p className="text-lg">
-                {`oh heyyo, me Vivek Ramaswag (the 1 in the middl), dat boi who go "nuh-uh" to pharma
+                {`oh heyyo, me Vivek Ramaswag (the 1 on tha rite), dat boi who go "nuh-uh" to pharma
                 biggie life, flingin' shade at thicc corp 'wokez'. Rote "Woak,
                 Ink." cuz moolah > virtue-flashin', y'feel? Might yeeto into
                 politix, might nawt—keepin' it saucy. #RamaSwizzle
