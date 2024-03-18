@@ -102,8 +102,8 @@ function Navbar() {
               className="block md:hidden"
             >
               {pages.map((page) => (
-                <MenuItem key={page.text} href={page.link}>
-                  <Typography textAlign="center">{page.text}</Typography>
+                <MenuItem key={page.text}>
+                  <a href={page.link}>{page.text}</a>
                 </MenuItem>
               ))}
             </Menu>
