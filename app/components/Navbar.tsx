@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { COIN_NAME } from "../constants";
+import { COIN_NAME, TWITTER_HANDLE } from "../constants";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,7 +13,14 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Tweetr (I mean X)", "Telgrum"];
+type navLink = {
+  text: string;
+  link: string;
+};
+
+const pages: navLink[] = [
+  { text: "Tweetr (I mean X)", link: `https://twitter.com/${TWITTER_HANDLE}` },
+];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -95,8 +102,8 @@ function Navbar() {
               className="block md:hidden"
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.text} href={page.link}>
+                  <Typography textAlign="center">{page.text}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -105,11 +112,11 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 className="ml-5"
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.text}
+                href={page.link}
                 sx={{ mx: 1, my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.text}
               </Button>
             ))}
           </Box>

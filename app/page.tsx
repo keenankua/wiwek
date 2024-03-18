@@ -6,18 +6,18 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import IconButton from "@mui/material/IconButton";
 import vivek from "./assets/vivek-himself.png";
-import amezunGuy from "./assets/Adsiz-tasarim-kopyasi.webp";
-import amezunWork from "./assets/amezun-work.webp";
 import vivekNotepad from "./assets/vivek-notepad.jpeg";
 import vivekRockChild from "./assets/vivek-rock-child.png";
-import smilingEmoji from "./assets/smiling-emoji.jpg";
 import XIcon from "@mui/icons-material/X";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import { COIN_NAME, TAGLINE, CONTRACT_ADDRESS } from "./constants";
+import {
+  COIN_NAME,
+  TAGLINE,
+  CONTRACT_ADDRESS,
+  TWITTER_HANDLE,
+} from "./constants";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 
 export default function Home() {
   const [open, setOpen] = React.useState(false);
@@ -63,7 +63,7 @@ export default function Home() {
             className="w-full"
           />
         </section>
-        <section className="p-16">
+        <section className="p-8 sm:p-16">
           <header className="text-center mb-8">
             <h2 className="text-5xl sm:text-6xl md:text-8xl">wiwek rama$wag</h2>
           </header>
@@ -77,7 +77,7 @@ export default function Home() {
               <h4 className="text-3xl sm:text-4xl md:text-5xl mb-4 text-gray-400">
                 {TAGLINE}
               </h4>
-              <p>
+              <p className="text-lg">
                 {`oh heyyo, me Vivek Ramaswag (the 1 in the middl), dat boi who go "nuh-uh" to pharma
                 biggie life, flingin' shade at thicc corp 'wokez'. Rote "Woak,
                 Ink." cuz moolah > virtue-flashin', y'feel? Might yeeto into
@@ -178,11 +178,8 @@ export default function Home() {
             {CONTRACT_ADDRESS}
           </p>
           <div className="flex flex-row gap-4">
-            <IconButton onClick={() => {}}>
+            <IconButton href={`https://twitter.com/${TWITTER_HANDLE}`}>
               <XIcon />
-            </IconButton>
-            <IconButton onClick={() => {}}>
-              <TelegramIcon />
             </IconButton>
           </div>
 
